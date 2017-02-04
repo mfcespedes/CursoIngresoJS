@@ -14,8 +14,7 @@ function Rectangulo ()
 	largo=parseInt(largo);
 	ancho=parseInt(ancho);
 
-	var resultado;
-	resultado=((2*(largo+ancho))*3);
+	var resultado=((2*(largo+ancho))*3);
 
 	alert(resultado);
 
@@ -26,8 +25,7 @@ function Circulo ()
 
 	radio=document.getElementById('Radio').value;
 
-	var resultado;
-	resultado=((2*3,14)*radio);
+	var resultado=((2*3.14*radio)*3);
 
 	alert(resultado);
 }
@@ -39,13 +37,10 @@ function Materiales ()
 	largo=document.getElementById('Largo').value;
 	ancho=document.getElementById('Ancho').value;
 
-	var metroCuadrado;
-	metroCuadrado=(largo*ancho);
+	var metroCuadrado=(largo*ancho);
 
-	var cemento;
-	cemento=metroCuadrado*2;
-	var cal;
-	cal=metroCuadrado*3;
+	var cemento=metroCuadrado*2;
+	var cal=metroCuadrado*3;
 
 	alert("Se necesitan "+cemento+" bolsas de cemento y "+cal+" bolsas de cal");
 }
