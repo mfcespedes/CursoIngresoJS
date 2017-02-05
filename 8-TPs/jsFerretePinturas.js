@@ -8,7 +8,7 @@ function FahrenheitCentigrados ()
 	temperatura=document.getElementById('Temperatura').value;
 	var mostrar;
 	mostrar=((temperatura-32)*(5/9));
-	alert(temperatura+" Fahrenheit son "+mostrar+" centígrados");
+	alert(temperatura+" Fahrenheit son "+mostrar+" Centígrados");
 }
 
 function CentigradosFahrenheit () 
@@ -17,6 +17,6 @@ function CentigradosFahrenheit ()
 	temperatura=document.getElementById('Temperatura').value;
 	temperatura=parseInt(temperatura);
 	var mostrar=((temperatura*(9/5))+32);
-	alert(temperatura+" centígrados son "+mostrar+" centígrados");
+	alert(temperatura+" Centígrados son "+mostrar+" Fahrenheit");
 
 }
