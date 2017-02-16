@@ -9,18 +9,46 @@ de no ser igual se debe informar si “falta…”  para llegar al número secre
 */
 var numeroSecreto; 
 var contadorIntentos;
+var numeroIngresado;
 
 function comenzar()
 {
 	//Genero el número RANDOM entre 1 y 100
 	 
 		//alert(numeroSecreto );
-	
-
+		document.getElementById('numero').value="";
+		document.getElementById('intentos').value="";
+		alert("Adivina el numero, tenes 6 intentos");
+		numeroSecreto=Math.floor((Math.random()*100)+1);
+		contadorIntentos=0;
 }
+		
 
 function verificar()
 {
+	numeroIngresado=document.getElementById('numero').value;
+	contadorIntentos=contadorIntentos+1;
+	document.getElementById('intentos').value=contadorIntentos;
+		if (numeroIngresado>numeroSecreto) 
+			{
+				alert("Te pasaste...");
+			};
+			if (numeroIngresado<numeroSecreto) 
+				{
+					alert("Te falta...");
+				};
+				if (numeroIngresado==numeroSecreto) 
+					{
+						alert("Sos un ganador y acertaste en solo "+contadorIntentos);
+						document.getElementById('numero').value="";
+						document.getElementById('intentos').value="";	
+					};
+					if (numeroIngresado!=numeroSecreto&&contadorIntentos==6) 
+						{
+							document.getElementById('numero').value="";
+							document.getElementById('intentos').value="";
+							alert("Perdiste, volvé a comenzar el numero era: "+numeroSecreto);
+						};
 	
 	
 }
