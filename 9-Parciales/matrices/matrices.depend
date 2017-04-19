@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1492563082 source:d:\nueva carpeta\matrices\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1492564257 d:\nueva carpeta\matrices\funciones.h
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+
